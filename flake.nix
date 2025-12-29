@@ -21,6 +21,7 @@
                 cargo
                 openssl
                 pkg-config
+                protobuf
             ];
             shellHook = ''
                 echo "Entered Blockscout development shell";
