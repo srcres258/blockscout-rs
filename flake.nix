@@ -1,5 +1,5 @@
 {
-    description = "Blockscout environment";
+    description = "Blockscout Rust environment";
 
     inputs = {
         nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -15,7 +15,7 @@
         };
     in {
         devShells.${system}.default = pkgs.mkShell {
-            name = "blockscout-dev";
+            name = "blockscout-rs-dev";
             buildInputs = with pkgs; [
                 rustc
                 cargo
